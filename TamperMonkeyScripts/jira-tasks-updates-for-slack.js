@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Jira Item - Copy updates message for Slack thread
 // @namespace  http://tampermonkey.net/
-// @version    0.1
+// @version    0.2
 // @description  Create Updates message for slack
 // @match      https://southworks.atlassian.net/browse/*
 // @copyright  Juan Milla
@@ -37,11 +37,11 @@
             // var itemPriorityLevelValue = itemPriorityLevel[0].innerText;
 
             // Build the slack message
-            var priorityIcon = ':thinkingpepe:';
+            var priorityIcon = ':icrnormal:';
 
             // if (highPriorityLevels.includes(itemPriorityLevelValue.toLowerCase()))
             // {
-            //     priorityIcon = ':fire:'
+            //     priorityIcon = ':icrhigh:'
             // }
 
             GM_setClipboard(priorityIcon + " *[Updates]* `" + document.title + "`\n" + window.location , 'text');
