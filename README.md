@@ -1,5 +1,5 @@
 # Tools
-Here you will found some tools and scripts that maybe could be useful to you (there is only one for now... :()
+Here you will found some tools and scripts that maybe could be useful to you (there is only one for now... :(  )
 
 ## tampermonkey-scripts
 
