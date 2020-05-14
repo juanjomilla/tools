@@ -17,21 +17,32 @@
     var highPriorityLevels = ["high", "urgent", "hotfix", "next", "highest"];
 
     setTimeout(function() {
-        $('div.sc-etRtft.ipfqEb')
+
+        var linkIssueButton = $('span').filter( function (i) {
+            return $(this).html().toLowerCase() === 'link issue'
+        });
+
+        linkIssueButton
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .parent()
             .append('<button id="slackButton">Copy For Slack</button>');
 
         $('#slackButton').click(function () {
             // Get the priority level
-            var itemPriorityLevel = $('span.sc-jqIZGH.faHkSh');
-            var itemPriorityLevelValue = itemPriorityLevel[0].innerText;
+            // TODO: get element that contains the item priority
+            // var itemPriorityLevel = $('span.sc-jqIZGH.faHkSh');
+            // var itemPriorityLevelValue = itemPriorityLevel[0].innerText;
 
             // Build the slack message
             var priorityIcon = ':thinkingpepe:';
 
-            if (highPriorityLevels.includes(itemPriorityLevelValue.toLowerCase()))
-            {
-                priorityIcon = ':fire:'
-            }
+            // if (highPriorityLevels.includes(itemPriorityLevelValue.toLowerCase()))
+            // {
+            //     priorityIcon = ':fire:'
+            // }
 
             GM_setClipboard(priorityIcon + " *[Updates]* `" + document.title + "`\n" + window.location , 'text');
         });
