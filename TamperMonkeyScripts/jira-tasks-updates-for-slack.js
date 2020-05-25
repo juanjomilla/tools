@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Jira Item - Copy updates message for Slack thread
 // @namespace  http://tampermonkey.net/
-// @version    0.1
+// @version    0.2
 // @description  Create Updates message for slack
 // @match      https://southworks.atlassian.net/browse/*
 // @copyright  Juan Milla
@@ -17,21 +17,32 @@
     var highPriorityLevels = ["high", "urgent", "hotfix", "next", "highest"];
 
     setTimeout(function() {
-        $('div.sc-etRtft.ipfqEb')
+
+        var linkIssueButton = $('span').filter( function (i) {
+            return $(this).html().toLowerCase() === 'link issue'
+        });
+
+        linkIssueButton
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .parent()
             .append('<button id="slackButton">Copy For Slack</button>');
 
         $('#slackButton').click(function () {
             // Get the priority level
-            var itemPriorityLevel = $('span.sc-jqIZGH.faHkSh');
-            var itemPriorityLevelValue = itemPriorityLevel[0].innerText;
+            // TODO: get element that contains the item priority
+            // var itemPriorityLevel = $('span.sc-jqIZGH.faHkSh');
+            // var itemPriorityLevelValue = itemPriorityLevel[0].innerText;
 
             // Build the slack message
-            var priorityIcon = ':thinkingpepe:';
+            var priorityIcon = ':icrnormal:';
 
-            if (highPriorityLevels.includes(itemPriorityLevelValue.toLowerCase()))
-            {
-                priorityIcon = ':fire:'
-            }
+            // if (highPriorityLevels.includes(itemPriorityLevelValue.toLowerCase()))
+            // {
+            //     priorityIcon = ':icrhigh:'
+            // }
 
             GM_setClipboard(priorityIcon + " *[Updates]* `" + document.title + "`\n" + window.location , 'text');
         });
