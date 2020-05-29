@@ -17,6 +17,9 @@
     setTimeout(function(){
         var segments = window.location.pathname.split("/");
         var id = segments[segments.length-1].toLowerCase();
+        
+        var principalUrl = "";
+        var preset = "";
 
         var linkIssueButton = $('span').filter( function (i) {
             return $(this).html().toLowerCase() === 'link issue'
@@ -32,7 +35,7 @@
 
             $('#foreodButton')
                 .click(function (){
-                    window.open("https://sw-eod-generator.azurewebsites.net/preview/" + id + "?preset=wye-team-chh");
+                    window.open(principalUrl + id + "?preset=" + preset);
                 });
         
     }, 2000);
