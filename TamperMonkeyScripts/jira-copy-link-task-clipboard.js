@@ -40,10 +40,13 @@
 
 GM_addStyle ( `
     #sodButton {
-        background: rgb(0, 120, 212);
+        background: #0052cc;
         color: rgb(255,255,255);
         cursor: pointer;
         border: none;
-        font: 12px "Segoe UI";
-        line-height: 26px;
+        font: 14px "Arial";
+        line-height: 14px;
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-right: 8px;
 `);
