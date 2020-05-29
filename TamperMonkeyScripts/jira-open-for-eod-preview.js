@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Jira Item - Open preview For EOD
 // @namespace   http://tampermonkey.net/
-// @version     0.1
+// @version     0.2
 // @description Open preview For EOD
 // @match       https://southworks.atlassian.net/browse/*
 // @copyright   Juan Milla

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Jira Item - Generate link from jira task
 // @namespace  http://tampermonkey.net/
-// @version    0.1
+// @version    0.2
 // @description  Generates a link to the Jira task with the format '[#linkToTask] title of the task'
 // @match      https://*.atlassian.net/browse/*
 // @copyright  Juan Milla

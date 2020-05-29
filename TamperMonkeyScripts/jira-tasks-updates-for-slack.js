@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Jira Item - Copy updates message for Slack thread
 // @namespace  http://tampermonkey.net/
-// @version    0.2
+// @version    0.3
 // @description  Create Updates message for slack
 // @match      https://southworks.atlassian.net/browse/*
 // @copyright  Juan Milla
