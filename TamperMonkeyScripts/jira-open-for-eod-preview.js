@@ -1,14 +1,16 @@
 // ==UserScript==
-// @name        Jira Item - Open preview For EOD
-// @namespace   http://tampermonkey.net/
-// @version     0.2
-// @description Open preview For EOD
-// @match       https://southworks.atlassian.net/browse/*
-// @copyright   Juan Milla
-// @author      juanjomilla
-// @require     http://code.jquery.com/jquery-latest.js
-// @grant       GM_setClipboard
-// @grant       GM_addStyle
+// @name            Jira Item - Open preview For EOD
+// @namespace       http://tampermonkey.net/
+// @version         0.3
+// @description     Open preview For EOD
+// @match           https://southworks.atlassian.net/browse/*
+// @copyright       Juan Milla
+// @author          juanjomilla
+// @updateURL       https://github.com/juanjomilla/tools/raw/master/TamperMonkeyScripts/jira-open-for-eod-preview.js
+// @downloadURL     https://github.com/juanjomilla/tools/raw/master/TamperMonkeyScripts/jira-open-for-eod-preview.js
+// @require         http://code.jquery.com/jquery-latest.js
+// @grant           GM_setClipboard
+// @grant           GM_addStyle
 // ==/UserScript==
 
 (function(){

@@ -1,14 +1,16 @@
 // ==UserScript==
-// @name       Jira Item - Copy updates message for Slack thread
-// @namespace  http://tampermonkey.net/
-// @version    0.3
-// @description  Create Updates message for slack
-// @match      https://southworks.atlassian.net/browse/*
-// @copyright  Juan Milla
-// @author     juanjomilla
-// @require http://code.jquery.com/jquery-latest.js
-// @grant        GM_setClipboard
-// @grant        GM_addStyle
+// @name            Jira Item - Copy updates message for Slack thread
+// @namespace       http://tampermonkey.net/
+// @version         0.4
+// @description     Create Updates message for slack
+// @match           https://southworks.atlassian.net/browse/*
+// @copyright       Juan Milla
+// @author          juanjomilla
+// @updateURL       https://github.com/juanjomilla/tools/raw/master/TamperMonkeyScripts/jira-tasks-updates-for-slack.js
+// @downloadURL     https://github.com/juanjomilla/tools/raw/master/TamperMonkeyScripts/jira-tasks-updates-for-slack.js
+// @require         http://code.jquery.com/jquery-latest.js
+// @grant           GM_setClipboard
+// @grant           GM_addStyle
 // ==/UserScript==
 
 (function() {

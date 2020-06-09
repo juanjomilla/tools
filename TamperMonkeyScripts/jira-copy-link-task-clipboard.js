@@ -1,14 +1,16 @@
 // ==UserScript==
-// @name       Jira Item - Generate link from jira task
-// @namespace  http://tampermonkey.net/
-// @version    0.2
-// @description  Generates a link to the Jira task with the format '[#linkToTask] title of the task'
-// @match      https://*.atlassian.net/browse/*
-// @copyright  Juan Milla
-// @author     juanjomilla
-// @require http://code.jquery.com/jquery-latest.js
-// @grant        GM_setClipboard
-// @grant        GM_addStyle
+// @name            Jira Item - Generate link from jira task
+// @namespace       http://tampermonkey.net/
+// @version         0.3
+// @description     Generates a link to the Jira task with the format '[#linkToTask] title of the task'
+// @match           https://*.atlassian.net/browse/*
+// @copyright       Juan Milla
+// @author          juanjomilla
+// @updateURL       https://github.com/juanjomilla/tools/raw/master/TamperMonkeyScripts/jira-copy-link-task-clipboard.js
+// @downloadURL     https://github.com/juanjomilla/tools/raw/master/TamperMonkeyScripts/jira-copy-link-task-clipboard.js
+// @require         http://code.jquery.com/jquery-latest.js
+// @grant           GM_setClipboard
+// @grant           GM_addStyle
 // ==/UserScript==
 
 (function() {
